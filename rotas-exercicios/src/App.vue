@@ -1,14 +1,25 @@
 <template>
 	<div id="app">
 		<h1>Rotas com VueRouter</h1>
+		<Menu :itensMenu="itensMenu" />
 		<router-view />
 	</div>
 </template>
 
 <script>
-export default {
-	
-}
+	import Menu from './components/template/Menu.vue'
+
+	export default {
+		components:{ Menu },
+		data() {
+			return {
+				itensMenu: [ 
+					{ title: 'Início', tag: '/'},
+					{ title: 'Usuário', tag: '/usuario'},
+				]
+			}
+		},
+	}
 </script>
 
 <style>
