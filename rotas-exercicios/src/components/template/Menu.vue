@@ -1,10 +1,14 @@
 <template>
     <nav class="menu">
-        <!-- <router-link to="/">Início</router-link>
-        <router-link to="/usuario">Usuário</router-link> -->
-        <router-link v-for="item in itensMenu" :key="item.tag"
-            :to="item.tag"
-            >{{item.title}}</router-link>
+        <ul> 
+            <router-link v-for="item in itensMenu" :key="item.tag"
+                :to="item.tag"
+                tag="li"
+                active-class="active"
+                exact
+                ><a>{{item.title}}</a>
+            </router-link>
+        </ul>   
     </nav>
 </template>
 
