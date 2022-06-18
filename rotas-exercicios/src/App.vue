@@ -15,8 +15,11 @@
 			return {
 				itensMenu: [ 
 					{ title: 'Início', tag: '/'},
-					{ title: 'Usuário', tag: '/usuario/10'},
-				]
+					{ title: 'Usuário', tag: `/usuario/${this.id}`},
+					{ title: 'Usuário 2', tag: `/usuario/2`},
+					{ title: 'Usuário 3', tag: `/usuario/3`},
+				],
+				id: ''
 			}
 		},
 	}
