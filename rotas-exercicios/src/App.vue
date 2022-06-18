@@ -15,7 +15,7 @@
 			return {
 				itensMenu: [ 
 					{ title: 'Início', tag: '/'},
-					{ title: 'Usuário', tag: '/usuario'},
+					{ title: 'Usuário', tag: '/usuario/10'},
 				]
 			}
 		},
