@@ -6,17 +6,20 @@
                 to="/usuario/1" 
                 tag="li" 
                 active-class="active" 
-                exact><a>Usuario 1</a></router-link>
+                class="item-lista"
+                exact>Usuario 1</router-link>
             <router-link 
                 to="/usuario/2" 
                 tag="li" 
                 active-class="active" 
-                exact><a>Usuario 2</a></router-link>
+                class="item-lista"
+                exact>Usuario 2</router-link>
             <router-link 
                 to="/usuario/3" 
                 tag="li" 
                 active-class="active" 
-                exact><a>Usuario 3</a></router-link>
+                class="item-lista"
+                exact>Usuario 3</router-link>
         </ul>
     </div>
 </template>
