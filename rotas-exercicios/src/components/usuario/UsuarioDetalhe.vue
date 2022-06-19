@@ -11,7 +11,8 @@
         <router-link 
             tag="button" 
             primario
-            :to="{name: 'editarUsuario', params: { id } }" >
+            :to="{name: 'editarUsuario', params: { id }, 
+                    query: { completo: true, lingua: 'pt-br'} }" >
             Editar
         </router-link>
     </div>

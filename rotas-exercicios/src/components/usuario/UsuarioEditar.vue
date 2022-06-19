@@ -3,6 +3,8 @@
         <h3>Usuario Editar</h3>
         <hr>
          <p><strong>Editando usuário:</strong> {{id}} </p>
+         <p><strong>Completo:</strong> {{ $route.query.completo ? 'Sim' : 'Não'}} </p>
+         <p><strong>Lingua:</strong> {{ $route.query.lingua }} </p>
     </div>
 </template>
 
