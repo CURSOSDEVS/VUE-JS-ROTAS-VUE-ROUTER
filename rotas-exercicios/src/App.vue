@@ -1,16 +1,18 @@
 <template>
 	<div id="app">
 		<h1>Rotas com VueRouter</h1>
-		<Menu :itensMenu="itensMenu" />
+		<!-- <Menu :itensMenu="itensMenu" /> -->
+		<router-view name="menu" />
 		<router-view />
+		<router-view name="menuInferior" />
 	</div>
 </template>
 
 <script>
-	import Menu from './components/template/Menu.vue'
+	// import Menu from './components/template/Menu.vue'
 
 	export default {
-		components:{ Menu },
+		// components:{ Menu },
 		data() {
 			return {
 				itensMenu: [ 
