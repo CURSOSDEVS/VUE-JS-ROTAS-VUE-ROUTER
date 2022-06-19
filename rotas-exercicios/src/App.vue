@@ -18,8 +18,7 @@
 					{ title: 'Usuário', tag: `/usuario/${this.id}`},
 					{ title: 'Usuário 2', tag: `/usuario/2`},
 					{ title: 'Usuário 3', tag: `/usuario/3`},
-				],
-				id: ''
+				]
 			}
 		},
 	}
