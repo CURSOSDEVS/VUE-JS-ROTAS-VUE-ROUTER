@@ -7,7 +7,7 @@
          <p><strong>Lingua:</strong> {{ $route.query.lingua }} </p>
          
          <hr>
-         <button primario>Confirmar</button>
+         <button primario @click="confirmou = !confirmou">Confirmar</button>
 
          <div id="rodape">
             <h3>Rodapé componente Editar</h3>
@@ -18,6 +18,22 @@
 <script>
     export default{
          props: ['id'],
+         data() {
+            return {
+                confirmou : false
+            }
+         },
+         beforeRouteLeave (to, from, next) {
+            if (this.confirmou){
+                next()
+            }else{
+                if(confirm('Tem certeza ?')){
+                    next()
+                }else{
+                    next(false)
+                }
+            }
+         }  
     }
 </script>
 
