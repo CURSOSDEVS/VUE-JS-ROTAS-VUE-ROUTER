@@ -28,9 +28,9 @@
 
 <script>
     export default{
-        props:{
-            itensMenu: {type: Array, required: true}
-        }
+        // props:{
+        //     itensMenu: {type: Array, required: true}
+        // }
     }
 </script>
 

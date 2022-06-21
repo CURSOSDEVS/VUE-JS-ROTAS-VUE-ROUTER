@@ -5,6 +5,9 @@
          <p><strong>Editando usuário:</strong> {{id}} </p>
          <p><strong>Completo:</strong> {{ $route.query.completo ? 'Sim' : 'Não'}} </p>
          <p><strong>Lingua:</strong> {{ $route.query.lingua }} </p>
+         
+         <hr>
+         <button primario>Confirmar</button>
 
          <div id="rodape">
             <h3>Rodapé componente Editar</h3>

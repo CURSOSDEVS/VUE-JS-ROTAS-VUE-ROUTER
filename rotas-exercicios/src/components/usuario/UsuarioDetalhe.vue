@@ -23,6 +23,12 @@
 <script>
     export default{
          props: ['id'],
+         beforeRouteEnter (to, from, next) {
+            console.log('dentro do componente => usuario detalhe')
+            // next(vm =>{ console.log(`Id do usuário ${vm.id}`)})
+            const autenticado = false
+            autenticado ? next(console.log('Usuario autenticado')) : next(false, console.log('Usuario não autenticado'))
+         }
     }    
 </script>
 
