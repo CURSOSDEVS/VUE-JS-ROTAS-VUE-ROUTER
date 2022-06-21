@@ -5,6 +5,10 @@
          <p><strong>Editando usuário:</strong> {{id}} </p>
          <p><strong>Completo:</strong> {{ $route.query.completo ? 'Sim' : 'Não'}} </p>
          <p><strong>Lingua:</strong> {{ $route.query.lingua }} </p>
+
+         <div id="rodape">
+            <h3>Rodapé componente Editar</h3>
+         </div>
     </div>
 </template>
 
@@ -15,5 +19,7 @@
 </script>
 
 <style>
-
+    #rodape{
+        margin-top: 1000px;
+    }
 </style>
